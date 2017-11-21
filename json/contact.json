@@ -1,7 +1,7 @@
 var contactForm = {
   "_id": "5a124dd24bcde80001c08f4f",
   "machineName": "rfiovtfbcsdjnmx:contactForm",
-  "modified": "2017-11-21T03:52:36.562Z",
+  "modified": "2017-11-21T04:01:02.011Z",
   "title": "Contact Form",
   "display": "form",
   "name": "contactForm",
@@ -10,128 +10,19 @@ var contactForm = {
   "created": "2017-11-20T03:36:50.637Z",
   "components": [
     {
-      "properties": { "": "" },
-      "conditional": {
-        "eq": "",
-        "when": null,
-        "show": ""
-      },
-      "tags": [],
-      "breadcrumb": "default",
-      "type": "panel",
+      "key": "panel",
+      "input": false,
+      "title": "Contact Information",
+      "theme": "default",
+      "tableView": false,
       "components": [
         {
-          "lockKey": true,
-          "properties": { "": "" },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": false
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "lblFrom",
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
           "label": "From:",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": { "": "" },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": false
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "lblTo",
-          "label": "To:",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "properties": { "": "" },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": false
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "lblSubject",
-          "label": "Subject:",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true,
-          "lockKey": true
-        },
-        {
-          "input": true,
-          "tableView": true,
-          "inputType": "text",
-          "inputMask": "",
-          "label": "Attachment:",
-          "key": "lblAttachment",
+          "key": "lblFrom",
           "placeholder": "",
           "prefix": "",
           "suffix": "",
@@ -163,17 +54,126 @@ var contactForm = {
         {
           "input": true,
           "tableView": true,
-          "label": "",
-          "key": "panelTextareaField",
+          "inputType": "text",
+          "inputMask": "",
+          "label": "To:",
+          "key": "lblTo",
           "placeholder": "",
           "prefix": "",
           "suffix": "",
-          "rows": 3,
           "multiple": false,
           "defaultValue": "",
           "protected": false,
+          "unique": false,
           "persistent": true,
           "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": { "": "" },
+          "lockKey": true
+        },
+        {
+          "lockKey": true,
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Subject:",
+          "key": "lblSubject",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": { "": "" }
+        },
+        {
+          "lockKey": true,
+          "properties": { "": "" },
+          "tags": [],
+          "type": "textfield",
+          "conditional": {
+            "eq": "",
+            "when": null,
+            "show": ""
+          },
+          "validate": {
+            "customPrivate": false,
+            "custom": "",
+            "pattern": "",
+            "maxLength": "",
+            "minLength": "",
+            "required": false
+          },
+          "clearOnHide": true,
+          "hidden": false,
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "multiple": false,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "",
+          "key": "lblAttachment",
+          "label": "Attachment:",
+          "inputMask": "",
+          "inputType": "text",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "isNew": false,
+          "properties": { "": "" },
+          "conditional": {
+            "eq": "",
+            "when": null,
+            "show": ""
+          },
+          "tags": [],
+          "type": "textarea",
+          "validate": {
+            "custom": "",
+            "pattern": "",
+            "maxLength": "",
+            "minLength": "",
+            "required": false
+          },
+          "clearOnHide": true,
           "wysiwyg": {
             "width": "400px",
             "height": "400px",
@@ -182,98 +182,98 @@ var contactForm = {
             "extraPlugins": "justify,font",
             "toolbarGroups": [
               {
-                "groups": [ "basicstyles", "cleanup" ],
-                "name": "basicstyles"
+                "name": "basicstyles",
+                "groups": [ "basicstyles", "cleanup" ]
               },
               {
-                "groups": [ "list", "indent", "blocks", "align", "bidi", "paragraph", "-", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyBlock" ],
-                "name": "paragraph"
+                "name": "paragraph",
+                "groups": [ "list", "indent", "blocks", "align", "bidi", "paragraph", "-", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyBlock" ]
               },
               {
-                "groups": [ "links" ],
-                "name": "links"
+                "name": "links",
+                "groups": [ "links" ]
               },
               {
-                "groups": [ "insert" ],
-                "name": "insert"
+                "name": "insert",
+                "groups": [ "insert" ]
               },
               "/",
               {
-                "groups": [ "Styles", "Format", "Font", "FontSize" ],
-                "name": "styles"
+                "name": "styles",
+                "groups": [ "Styles", "Format", "Font", "FontSize" ]
               },
               {
-                "groups": [ "colors" ],
-                "name": "colors"
+                "name": "colors",
+                "groups": [ "colors" ]
               },
               {
-                "groups": [ "clipboard", "undo" ],
-                "name": "clipboard"
+                "name": "clipboard",
+                "groups": [ "clipboard", "undo" ]
               },
               {
-                "groups": [ "find", "selection", "spellchecker", "editing" ],
-                "name": "editing"
+                "name": "editing",
+                "groups": [ "find", "selection", "spellchecker", "editing" ]
               },
               {
-                "groups": [ "mode", "document", "doctools" ],
-                "name": "document"
+                "name": "document",
+                "groups": [ "mode", "document", "doctools" ]
               },
               {
-                "groups": [ "others" ],
-                "name": "others"
+                "name": "others",
+                "groups": [ "others" ]
               },
               {
-                "groups": [ "tools" ],
-                "name": "tools"
+                "name": "tools",
+                "groups": [ "tools" ]
               }
             ]
           },
-          "clearOnHide": true,
-          "validate": {
-            "required": false,
-            "minLength": "",
-            "maxLength": "",
-            "pattern": "",
-            "custom": ""
-          },
-          "type": "textarea",
-          "tags": [],
-          "conditional": {
-            "show": "",
-            "when": null,
-            "eq": ""
-          },
-          "properties": { "": "" },
-          "isNew": false
+          "hidden": false,
+          "persistent": true,
+          "protected": false,
+          "defaultValue": "",
+          "multiple": false,
+          "rows": 3,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "",
+          "key": "panelTextareaField",
+          "label": "",
+          "tableView": true,
+          "input": true
         }
       ],
-      "tableView": false,
-      "theme": "default",
-      "title": "Contact Information",
-      "input": false,
-      "key": "panel"
-    },
-    {
-      "type": "button",
-      "theme": "primary",
-      "disableOnInvalid": false,
-      "action": "custom",
-      "block": false,
-      "rightIcon": "",
-      "leftIcon": "",
-      "size": "md",
-      "key": "submit",
-      "tableView": false,
-      "label": "Submit",
-      "input": true,
+      "type": "panel",
+      "breadcrumb": "default",
       "tags": [],
       "conditional": {
         "show": "",
         "when": null,
         "eq": ""
       },
+      "properties": { "": "" }
+    },
+    {
+      "custom": "console.log(form.submission.data.lblFrom);\n\nvar form = new FormData();\nform.append(\"sender\", form.submission.data.lblFrom);\nform.append(\"receiver\", form.submission.data.lblTo);\nform.append(\"subject\", \"Test Mail Jet\");\nform.append(\"attachment_url\", \"https://praewwa.files.wordpress.com/2013/02/17685_938702.jpg\");\n\nvar settings = {\n    \"async\": true,\n    \"crossDomain\": true,\n    \"url\": \"https://togetherservice.azurewebsites.net/api/callsp\",\n    \"method\": \"POST\",\n    \"headers\": {\n        \"authorization\": \"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyIsImtpZCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyJ9.eyJhdWQiOiJhYzY1M2RkMC0yODA1LTRlOTAtYTY5MC04MmNkZWVlMzg5NWYiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zZTBiNmNiZC00OTU5LTRkMDEtODFiZi1jZTg4M2RkYWJkOTYvIiwiaWF0IjoxNTExMjMxNjc2LCJuYmYiOjE1MTEyMzE2NzYsImV4cCI6MTUxMTIzNTU3NiwiYWlvIjoiQVNRQTIvOEdBQUFBNTJldE94T0h1UCtLMlIxSnZ1ZTdKUGhWdTdTZm9OZXNoOGo1TFBuUVZXcz0iLCJhbXIiOlsicHdkIl0sImZhbWlseV9uYW1lIjoiSmFpZGVlIiwiZ2l2ZW5fbmFtZSI6IlN1a2FueWEiLCJpcGFkZHIiOiIxODAuMTgzLjk1LjE4OSIsIm5hbWUiOiJKYWlkZWUgU3VrYW55YSIsIm5vbmNlIjoiNzIxNDBkMzMwN2IzNDEwMThiZGYyYjU2ZWU0Yzc0YjhfMjAxNzExMjEwMjQ0MzQiLCJvaWQiOiI3NzZkNmFkOC01NTgyLTRmNGQtYmViMC1iY2FlMGZkYTBmYTAiLCJzdWIiOiJ2MFNNRnVNTG5tTmhfZUpMVHZ4UmJoM1QtTklMN1dKVzcxWTFuOGVKS0hVIiwidGlkIjoiM2UwYjZjYmQtNDk1OS00ZDAxLTgxYmYtY2U4ODNkZGFiZDk2IiwidW5pcXVlX25hbWUiOiJzLmphaWRlZUB0b2dldGhlcnRlYW0uY28udGgiLCJ1cG4iOiJzLmphaWRlZUB0b2dldGhlcnRlYW0uY28udGgiLCJ1dGkiOiJOZjE3TDgzTnYwYXQ2bnV6Uzl3QkFBIiwidmVyIjoiMS4wIn0.qjCskenzK5VmFukRrhQpIscbEJWM17gUvoVUa3CbNJFHLVLLbLhn4YJkjDtQ5GoqPA_-mKaDo3CVeUQa-pSUOdVN2T2UM2wfmBhin9twNRp8rT72ne4RJPozGXEdsvKTvMIP9pFqXLboUL1wgJj8CA8c2zuum3lBvU_w3bE9lJRohjiap8mhLnl_n275EszuFYkbSNDSvKH1dnbuzAf8G1-SC0yfHCnZiAVxEDvehApJgNBB2lb3mR606gOLqFwopnpUwqdf26DakR6FelVriuurFweRAsrHqr7Z64C6UPDtAJOJr0AGsVMoBIkYE2-xrKmFQMmASY7UsjYkHg0CXg\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"17c60d4a-bc59-6502-ad5a-ddbb9e689dc9\"\n    },\n    \"processData\": false,\n    \"contentType\": false,\n    \"mimeType\": \"multipart/form-data\",\n    \"data\": form\n}\n\n$.ajax(settings).done(function (response) {\n    console.log(response);\n});",
       "properties": { "": "" },
-      "custom": "console.log(form.submission.data.lblFrom);\n\nvar settings = {\n  \"async\": true,\n  \"crossDomain\": true,\n  \"url\": \"https://togetherservice.azurewebsites.net/api/callsp\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"authorization\": \"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyIsImtpZCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyJ9.eyJhdWQiOiJhYzY1M2RkMC0yODA1LTRlOTAtYTY5MC04MmNkZWVlMzg5NWYiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zZTBiNmNiZC00OTU5LTRkMDEtODFiZi1jZTg4M2RkYWJkOTYvIiwiaWF0IjoxNTExMjMxNjc2LCJuYmYiOjE1MTEyMzE2NzYsImV4cCI6MTUxMTIzNTU3NiwiYWlvIjoiQVNRQTIvOEdBQUFBNTJldE94T0h1UCtLMlIxSnZ1ZTdKUGhWdTdTZm9OZXNoOGo1TFBuUVZXcz0iLCJhbXIiOlsicHdkIl0sImZhbWlseV9uYW1lIjoiSmFpZGVlIiwiZ2l2ZW5fbmFtZSI6IlN1a2FueWEiLCJpcGFkZHIiOiIxODAuMTgzLjk1LjE4OSIsIm5hbWUiOiJKYWlkZWUgU3VrYW55YSIsIm5vbmNlIjoiNzIxNDBkMzMwN2IzNDEwMThiZGYyYjU2ZWU0Yzc0YjhfMjAxNzExMjEwMjQ0MzQiLCJvaWQiOiI3NzZkNmFkOC01NTgyLTRmNGQtYmViMC1iY2FlMGZkYTBmYTAiLCJzdWIiOiJ2MFNNRnVNTG5tTmhfZUpMVHZ4UmJoM1QtTklMN1dKVzcxWTFuOGVKS0hVIiwidGlkIjoiM2UwYjZjYmQtNDk1OS00ZDAxLTgxYmYtY2U4ODNkZGFiZDk2IiwidW5pcXVlX25hbWUiOiJzLmphaWRlZUB0b2dldGhlcnRlYW0uY28udGgiLCJ1cG4iOiJzLmphaWRlZUB0b2dldGhlcnRlYW0uY28udGgiLCJ1dGkiOiJOZjE3TDgzTnYwYXQ2bnV6Uzl3QkFBIiwidmVyIjoiMS4wIn0.qjCskenzK5VmFukRrhQpIscbEJWM17gUvoVUa3CbNJFHLVLLbLhn4YJkjDtQ5GoqPA_-mKaDo3CVeUQa-pSUOdVN2T2UM2wfmBhin9twNRp8rT72ne4RJPozGXEdsvKTvMIP9pFqXLboUL1wgJj8CA8c2zuum3lBvU_w3bE9lJRohjiap8mhLnl_n275EszuFYkbSNDSvKH1dnbuzAf8G1-SC0yfHCnZiAVxEDvehApJgNBB2lb3mR606gOLqFwopnpUwqdf26DakR6FelVriuurFweRAsrHqr7Z64C6UPDtAJOJr0AGsVMoBIkYE2-xrKmFQMmASY7UsjYkHg0CXg\",\n    \"content-type\": \"application/json\",\n    \"cache-control\": \"no-cache\",\n    \"postman-token\": \"c28d3e4e-9ef8-2c5b-ffb5-aad331b49d70\"\n  },\n  \"processData\": false,\n  \"data\": \"{\\n\\t \\\"sender\\\": \\\"\" + form.submission.data.lblFrom + \"\\\",\\n    \\\"receiver\\\": \\\"\" + form.submission.data.lblTo + \"\\\",\\n    \\\"subject\\\": \\\"\" + form.submission.data.lblSubject + \"\\\",\\n    \\\"attachment_url\\\": \\\"https://praewwa.files.wordpress.com/2013/02/17685_938702.jpg\\\"\\n}\"\n}\n\n$.ajax(settings).done(function (response) {\n  console.log(response);\n});"
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "tags": [],
+      "input": true,
+      "label": "Submit",
+      "tableView": false,
+      "key": "submit",
+      "size": "md",
+      "leftIcon": "",
+      "rightIcon": "",
+      "block": false,
+      "action": "custom",
+      "disableOnInvalid": false,
+      "theme": "primary",
+      "type": "button"
     }
   ],
   "owner": "59b100556d85560007c28261",
